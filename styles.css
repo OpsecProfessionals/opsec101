@@ -5,7 +5,16 @@ body {
   padding-left:10%;
   padding-right:10%;
 }
-h1,h2,h3,h4,h5,text,li,ul,font,p {
+h1,h2,h3,h4,h5,text,li,ul,font,p, a{
   color:#000000;
   font-family: Arial, Helvetica, sans-serif;
 }
+a:link {
+  color: 000000;
+}
+
+/* visited link */
+a:visited {
+  color: 333333;
+}
+
