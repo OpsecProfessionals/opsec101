@@ -2,13 +2,22 @@
 
 In this guide we'll cover the basics of Opsec in a way that most anyone should be able to understand. This guide is split up into topics designed to be linked to directly for the purpose of convenient educational discussion. 
 
-<br/><br/>
+<br/>
 
 Skip to:
 
-<br/><br/>
+<br/>
 
-1. 
+1. [Don't start with countermeasures. Countermeasures come last.](#dont-start-with-countermeasures-countermeasures-come-last)
+2. [Don't start with countermeasures: thought experiment](#thought-experiment)
+3. [The Opsec process](#the-opsec-process)
+4. [The Opsec process: what needs protecting?](#what-needs-protecting)
+5. [The Opsec process: what needs protecting: Thought experiment](#thought-experiment1)
+6. [The Opsec process: what is the potential threat?](#what-is-the-potential-threat)
+7. [The Opsec process: what are the potential vulnerablities?](#what-are-the-potential-vulnerabilities)
+8. [The Opsec process: what is the potential risk?](#what-is-the-potential-risk)
+9. [The Opsec process: what are the countermeasures?](#what-are-the-countermeasures)
+10. [Good Opsec? Practice, practice, practice](#practice-practice-practice)
 
 <br/><br/>
 
@@ -270,7 +279,7 @@ The easiest countermeasure to these is the same for both:
 
 
 
-## Practice, practice, practice
+## Good Opsec? Practice, practice, practice
 
 
 The previous examples were largely obvious and wouldn’t necessarily need a document or checklist to discover them. What’s important is the thought process behind them: to be asking the right questions, and to get better at finding the right answers.
