@@ -27,4 +27,6 @@ input[type='checkbox'] { display: none; }
 .toggle:checked+.lbl-toggle { border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
 .collapsible-content .content-inner { background: rgba(255, 244, 79, 0.2); border-bottom: 1px solid rgba(255, 244, 79, 0.2); border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; padding: .5rem 1rem; }
 .collapsible-content p { margin-bottom: 0; }
+.lbl-tip { display: block; font-family: Arial, Helvetica, sans-serif; font-size: 1.2rem; padding: 1rem; color: #000; background: #f2f2f2; border-radius: 7px; }
+
 
