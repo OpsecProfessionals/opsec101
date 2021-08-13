@@ -1,6 +1,7 @@
 body {
-  background:#000000;
+  background:#ffffff;
 }
 h1,h2,h3,h4,h5,text,li,ul,font,p {
-  color:#FFFFFF
+  color:#000000;
+  font-family: monospace
 }
