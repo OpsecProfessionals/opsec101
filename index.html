@@ -47,7 +47,6 @@
 
     <h4 id="thought-experiment">Thought experiment</h4><br>
 
-
     <p><div class="wrap-collabsible"> <input id="collapsible1" class="toggle" type="checkbox"> <label for="collapsible1" class="lbl-toggle">If adding a deadbolt on your doors makes your home safer overall, why wouldn't you want to add one to every door in the house?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>While it might serve to slow down and frustrate a home invader, it would also mean everytime you go to the bathroom, kitchen, or anywhere in your house you'd be pulling out a key and locking/unlocking doors. This level of countermeasure might be necessary for inside a bank, but for most peoples homes it would only complicate life and potentially increase liability if there is an emergency.</p></div></div></div><br></p>
     <p><div class="wrap-collabsible"> <input id="collapsible2" class="toggle" type="checkbox"> <label for="collapsible2" class="lbl-toggle">If VPNs hide your location, why wouldn't you want to always use one all of the time?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>VPNs might work to hide your real IP address from questionable websites, but websites such as government or banking websites use that data to confirm your real identity. Spoofing that can cause complications such as account freezes.</p></div></div></div><br></p>
     <p><div class="wrap-collabsible"> <input id="collapsible3" class="toggle" type="checkbox"> <label for="collapsible3" class="lbl-toggle">If using strong passwords and changing them often makes you safer, why wouldn't you want to change your phone's password everyday to a new 1024 character length passwords made up of random characters?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>Depending on how often you need to use your phone, having a long password to unlock it may make you unproductive at best. Imagining entering a password that takes 10 minutes to type out every time you want to respond to a message. This might make sense for a device that gains access to a government's nuclear control facilities, but for most of us it is far beyond the point of diminishing returns.</p></div></div></div><br></p>
@@ -77,6 +76,8 @@
 
     <p>To combat this, we put countermeasures in the back and focus on the rationale first. This is called the opsec process. The opsec process is a list of questions to help rationally assess a threat and judge the efficacy or even necessity of countermeasures against it.<br><br></p>
 
+    <p id="best-practices-fallacy"><b>Food for thought</b>: Some guides may argue that we should all apply "best practices" such as using a VPN, password managers, etc. In reality, while the countermeasures recommended might end up working for some of the people, some of the time, that merely indicates the threat model is similar for those individuals. Rather than making assumptions based on the "best practices" fallacy which implies a countermeasure-first approach, Opsec seeks to understand the rationale to make reproducible judgments in dynamic situations. In short, "best practices" fallacy is based on the study of successes, rather than failures, and as such is an inappropriate starting place when addressing any highly-individual and dynamic topic such as security or privacy.
+
     <br><br>
     <a href="#opsec-101">top</a><br>
 
@@ -98,17 +99,22 @@
     
     <h3 id="what-needs-protecting">1. What needs protecting?</h3><br>
 
-    <p>This could be information, a phyical item, your personal health, or anything that has value or provides additional opportunity once accessed. For most of us, the answer to this question might be family, our home, any number of valuable belongings, our personally identifiable information, important financial information, or our passwords. All of these things need to be protected, but not all of them are always at risk in every situation.<br><br></p>
+    <p>This could be information, a physical item, your personal health, or anything that has value or provides additional opportunity once accessed. For most of us, the answer to this question might be family, our home, any number of valuable belongings, our personally identifiable information, important financial information, or our passwords. All of these things need to be protected, but not all of them are always at risk in every situation.<br><br></p>
 
     <h4 id="thought-experiment-1">Thought experiment</h4>
-    <p>
+
+    <p><div class="wrap-collabsible"> <input id="collapsible4" class="toggle" type="checkbox"> <label for="collapsible4" class="lbl-toggle">Have you ever left your phone on a desk at work while turning your back on it to talk to a colleague? Couldn’t it have been stolen in that moment?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>Depending on what your relationship is with your colleagues, the level of safety common in said workplace, the type of workplace, and the value of the phone, information on it, or access it provides, that phone may either need to be handcuffed to you or can be lent to a colleague unlocked without incurring any risk at all.</p></div></div></div><br></p>
+    <p><div class="wrap-collabsible"> <input id="collapsible5" class="toggle" type="checkbox"> <label for="collapsible5" class="lbl-toggle">Have you ever left your front door open while carrying multiple loads of groceries or moving boxes from the car to the living room? Couldn’t someone have entered into the house in that moment?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>The physical safety of keeping our doors open is based on the likelihood of someone trying to enter. You can usually visually inspect your surroundings well enough to see if that is a likelihood or not, but whether or not take this seriously will likely depend on the safety of the neighborhood. Some neighborhoods you could leave your door open all day long without incurring any risk. Others, adding a security door to your house may just get it stolen in the night.</p></div></div></div><br></p>
+    <p><div class="wrap-collabsible"> <input id="collapsible6" class="toggle" type="checkbox"> <label for="collapsible6" class="lbl-toggle">Have you ever given your credit card to a cashier and trusted them to charge it only for the amount of the goods being purchased? Couldn’t they have charged a much larger amount of even stolen your card number for later personal use?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>While theft and fraud does happen, usually the bank and law enforcement resolve these issues for you. The likelihood of these things happening to you largely depend on the type of establishment and the risk/reward ratio for the individual. The risk of getting fired or going to jail deters most undetermined criminals.</p></div></div></div><br></p>
+
+    <!--p>
         <ul>
             <li>Have you ever left your phone on a desk at work while turning your back on it to talk to a colleague? Couldn’t it have been stolen in that moment?<br><br></li>
             <li>Have you ever left your front door open while carrying multiple loads of groceries or moving boxes from the car to the living room? Couldn’t someone have entered into the house in that moment?<br><br></li>
             <li>Have you ever given your credit card to a cashier and trusted them to charge it only for the amount of the goods being purchased? Couldn’t they have charged a much larger amount of even stolen your card number for later personal use?<br><br></li>
         </ul>
-    </p>
-    <p>The fact is, whether something needs protecting in that moment or not largely depends on what the threat might be, or more importantly the practicality of a threat at all. Just as it’s highly unlikely a worker in your office would steal your phone from your desk, it’s also unlikely it would matter if you had properly locked it and had no real useful information on it <i>(an example of an applied countermeasure)</i>.<br></p>
+    </p-->
+    <p>The fact is, whether something needs protecting in that moment or not largely depends on what the threat might be, or more importantly the practicality of a threat at all. Just as it’s highly unlikely a worker in your office would steal your phone from your desk, it’s also unlikely your stolen phone would garner much value to them if properly locked and devoid of any real useful information on it <i>(an example of an applied countermeasure)</i>.<br></p>
 
     <br><br>
     <a href="#opsec-101">top</a><br><br>
