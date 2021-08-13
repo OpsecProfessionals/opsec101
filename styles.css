@@ -1,6 +1,8 @@
 body {
   background:#ffffff;
   width:80%;
+  padding-left:10%;
+  padding-right:10%;
 }
 h1,h2,h3,h4,h5,text,li,ul,font,p {
   color:#000000;
