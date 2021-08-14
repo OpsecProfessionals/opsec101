@@ -1,257 +1,264 @@
 <html>
-<head>
-    <title>Opsec101</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
-</head>
+    <head>
+        <title>Opsec101</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+    </head>
 
-<body>
-    <h1 id="opsec-101">Opsec 101</h1>
-    <h5>by <a href="https://github.com/carrotcypher">carrotcypher</a>, educational program director at <a href="https://opsecprofessionals.org/">OSPA</a></h5><br><br>
-    <p>In this guide we'll cover the basics of Opsec in a way that most anyone should be able to understand. This guide is split up into topics designed to be linked to directly for the purpose of convenient educational discussion. As this is intended for all audiences, it will be rich in examples.</p><br><br>
+    <body>
+        <h1 id="opsec-101">Opsec 101</h1>
+        <h5>by <a href="https://github.com/carrotcypher">carrotcypher</a>, educational program director at <a href="https://opsecprofessionals.org/">OSPA</a></h5><br><br>
+        <p>In this guide we'll cover the basics of Opsec in a way that most anyone should be able to understand. This guide is split up into topics designed to be linked to directly for the purpose of convenient educational discussion. As this is intended for all audiences, it will be rich in examples.</p><br><br>
 
-    <p>Skip to:</p>
+        <p>Skip to:</p>
 
-    <p>
-        <ol>
-            <li><a href="#dont-start-with-countermeasures-countermeasures-come-last">Don&#39;t start with countermeasures. Countermeasures come last.</a></li>
-            <li><a href="#thought-experiment">Don&#39;t start with countermeasures: thought experiment</a></li>
-            <li><a href="#the-opsec-process">The Opsec process</a></li>
-            <li><a href="#what-needs-protecting">The Opsec process: what needs protecting?</a></li>
-            <li><a href="#thought-experiment-1">The Opsec process: what needs protecting: Thought experiment</a></li>
-            <li><a href="#what-is-the-potential-threat">The Opsec process: what is the potential threat?</a></li>
-            <li><a href="#what-are-the-potential-vulnerabilities">The Opsec process: what are the potential vulnerablities?</a></li>
-            <li><a href="#what-is-the-potential-risk">The Opsec process: what is the potential risk?</a></li>
-            <li><a href="#what-are-the-countermeasures">The Opsec process: what are the countermeasures?</a></li>
-            <li><a href="#good-opsec-practice-practice-practice">Good Opsec? Practice, practice, practice</a></li>
-        </ol>
-    </p>
-    
-    <br/><br/><br><br>
-    
-    <hr>
+        <p>
+            <ol>
+                <li><a href="#dont-start-with-countermeasures-countermeasures-come-last">Don&#39;t start with countermeasures. Countermeasures come last.</a></li>
+                <li><a href="#thought-experiment">Don&#39;t start with countermeasures: thought experiment</a></li>
+                <li><a href="#the-opsec-process">The Opsec process</a></li>
+                <li><a href="#what-needs-protecting">The Opsec process: what needs protecting?</a></li>
+                <li><a href="#thought-experiment-1">The Opsec process: what needs protecting: Thought experiment</a></li>
+                <li><a href="#what-is-the-potential-threat">The Opsec process: what is the potential threat?</a></li>
+                <li><a href="#what-are-the-potential-vulnerabilities">The Opsec process: what are the potential vulnerablities?</a></li>
+                <li><a href="#what-is-the-potential-risk">The Opsec process: what is the potential risk?</a></li>
+                <li><a href="#what-are-the-countermeasures">The Opsec process: what are the countermeasures?</a></li>
+                <li><a href="#good-opsec-practice-practice-practice">Good Opsec? Practice, practice, practice</a></li>
+            </ol>
+        </p>
 
-    <br/><br/><br><br>
-    
-    <h2 id="dont-start-with-countermeasures-countermeasures-come-last">Don't start with countermeasures. Countermeasures come last.</h2><br><br>
-    <p>A countermeasure literally means a measure of response to counter a threat. Countermeasures can be:<br><br>
-       
-    <p>
-        <ul>
-            <li>The browser you use to hide your fingerprint on websites<br><br></li>
-            <li>The lock on your front door to keep home intruders out<br><br></li>
-            <li>Your VPN that helps hides your location<br><br></li>
-            <li>A strong password to frustrate attempts to gain unauthorized access<br><br></li>
-        </ul><br><br>
-    </p>
-    
-    <p>Each of these countermeasures is designed to counter a specific threat. So why not use all of them "just to be safe"? In order to see why that thought process is flawed, let's take the countermeasure-first approach to the extreme.</p><br><br>
+        <br/><br/><br><br>
 
-    <h4 id="thought-experiment">Thought experiment</h4><br>
+        <hr>
 
-    <p><div class="wrap-collabsible"> <input id="collapsible1" class="toggle" type="checkbox"> <label for="collapsible1" class="lbl-toggle">If adding a deadbolt on your doors makes your home safer overall, why wouldn't you want to add one to every door in the house?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>While it might serve to slow down and frustrate a home invader, it would also mean everytime you go to the bathroom, kitchen, or anywhere in your house you'd be pulling out a key and locking/unlocking doors. This level of countermeasure might be necessary for inside a bank, but for most peoples homes it would only complicate life and potentially increase liability if there is an emergency.</p></div></div></div><br></p>
-    <p><div class="wrap-collabsible"> <input id="collapsible2" class="toggle" type="checkbox"> <label for="collapsible2" class="lbl-toggle">If VPNs hide your location, why wouldn't you want to always use one all of the time?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>VPNs might work to hide your real IP address from questionable websites, but websites such as government or banking websites use that data to confirm your real identity. Spoofing that can cause complications such as account freezes.</p></div></div></div><br></p>
-    <p><div class="wrap-collabsible"> <input id="collapsible3" class="toggle" type="checkbox"> <label for="collapsible3" class="lbl-toggle">If using strong passwords and changing them often makes you safer, why wouldn't you want to change your phone's password everyday to a new 1024 character length passwords made up of random characters?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>Depending on how often you need to use your phone, having a long password to unlock it may make you unproductive at best. Imagining entering a password that takes 10 minutes to type out every time you want to respond to a message. This might make sense for a device that gains access to a government's nuclear control facilities, but for most of us it is far beyond the point of diminishing returns.</p></div></div></div><br></p>
+        <br/><br/><br><br>
 
-    <!--p>
-        <ul>
-            <li>If adding a deadbolt on your doors makes your home safer overall, why wouldn't you want to add one to every door in the house?<br><br></li>
-            <li>If VPNs hide your location, why wouldn't you want to always use one all of the time?<br><br></li>
-            <li>If using strong passwords and changing them often makes you safer, why wouldn't you want to change your phone's password everyday to a new 1024 character length passwords made up of random characters?<br><br></li>
-        </ul>
-    </p-->
+        <h2 id="dont-start-with-countermeasures-countermeasures-come-last">Don't start with countermeasures. Countermeasures come last.</h2><br><br>
+        <p>A countermeasure literally means a measure of response to counter a threat. Countermeasures can be:<br><br>
 
-    <br><br>
+        <p>
+            <ul>
+                <li>The browser you use to hide your fingerprint on websites<br><br></li>
+                <li>The lock on your front door to keep home intruders out<br><br></li>
+                <li>Your VPN that helps hides your location<br><br></li>
+                <li>A strong password to frustrate attempts to gain unauthorized access<br><br></li>
+            </ul><br><br>
+        </p>
 
-    <p>It's quickly evident that without a rational threat or otherwise clear reason for a countermeasure, you end up spending time, energy, and even money for little to no benefit on a threat that may never materialize. Worse, in doing so you can increase your liability and attack surface.<br><br></p>
-    <p>The countermeasure-first approach is unsustainable, misleading, and fundementally ignores two critical paradigms:<br><br></p>
+        <p>Each of these countermeasures is designed to counter a specific threat. So why not use all of them "just to be safe"? In order to see why that thought process is flawed, let's take the countermeasure-first approach to the extreme.</p><br><br>
 
-    <p>
-        <ol>
-            <li>Convenience is inversely proportional to safety and security. The more secure we make things, the less convenient they become and the more liability or vulnerabilities may be introduced.<br><br>
-                <p><img src="https://i0.wp.com/37prime.com/news/wp-content/uploads/2013/08/Security-vs-Convenience-Curved.png" width="50%"></p>
-            </li>
-            <li>The more you attempt to secure something, the more attention it can bring, potentially increasing threats. Often, hiding in plain sight is more effective.</li>
-        </ol>
+        <h4 id="thought-experiment">Thought experiment</h4><br>
+
+        <p><div class="wrap-collabsible"> <input id="collapsible1" class="toggle" type="checkbox"> <label for="collapsible1" class="lbl-toggle">If adding a deadbolt on your doors makes your home safer overall, why wouldn't you want to add one to every door in the house?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>While it might serve to slow down and frustrate a home invader, it would also mean everytime you go to the bathroom, kitchen, or anywhere in your house you'd be pulling out a key and locking/unlocking doors. This level of countermeasure might be necessary for inside a bank, but for most peoples homes it would only complicate life and potentially increase liability if there is an emergency.</p></div></div></div><br></p>
+        <p><div class="wrap-collabsible"> <input id="collapsible2" class="toggle" type="checkbox"> <label for="collapsible2" class="lbl-toggle">If VPNs hide your location, why wouldn't you want to always use one all of the time?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>VPNs might work to hide your real IP address from questionable websites, but websites such as government or banking websites use that data to confirm your real identity. Spoofing that can cause complications such as account freezes.</p></div></div></div><br></p>
+        <p><div class="wrap-collabsible"> <input id="collapsible3" class="toggle" type="checkbox"> <label for="collapsible3" class="lbl-toggle">If using strong passwords and changing them often makes you safer, why wouldn't you want to change your phone's password everyday to a new 1024 character length passwords made up of random characters?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>Depending on how often you need to use your phone, having a long password to unlock it may make you unproductive at best. Imagining entering a password that takes 10 minutes to type out every time you want to respond to a message. This might make sense for a device that gains access to a government's nuclear control facilities, but for most of us it is far beyond the point of diminishing returns.</p></div></div></div><br></p>
+
+        <!--p>
+            <ul>
+                <li>If adding a deadbolt on your doors makes your home safer overall, why wouldn't you want to add one to every door in the house?<br><br></li>
+                <li>If VPNs hide your location, why wouldn't you want to always use one all of the time?<br><br></li>
+                <li>If using strong passwords and changing them often makes you safer, why wouldn't you want to change your phone's password everyday to a new 1024 character length passwords made up of random characters?<br><br></li>
+            </ul>
+        </p-->
+
         <br><br>
-    </p>
 
-    <p>To combat this, we put countermeasures in the back and focus on the rationale first. This is called the opsec process. The opsec process is a list of questions to help rationally assess a threat and judge the efficacy or even necessity of countermeasures against it.<br><br></p>
+        <p>It's quickly evident that without a rational threat or otherwise clear reason for a countermeasure, you end up spending time, energy, and even money for little to no benefit on a threat that may never materialize. Worse, in doing so you can increase your liability and attack surface.<br><br></p>
+        <p>The countermeasure-first approach is unsustainable, misleading, and fundementally ignores two critical paradigms:<br><br></p>
 
-    <p id="best-practices-fallacy" class="lbl-tip"><b>Food for thought</b>: Some guides recommend taking a "best practices" approach to security, such as using recommending everyone use a VPN, password managers, etc. This "best practices" fallacy is a countermeasure-first approach based on the study of successes, rather than failures, and as such is an insufficient starting point when assessing any highly-individual and dynamic topic such as security or privacy.<br><br>In reality, while the countermeasures recommended might end up working for some of the people, some of the time, that merely indicates the threat model for those people happens to be similar at the moment, but it doesn't teach why, nor is it adaptable for when it's not similar. This is why rather than making assumptions based on the "best practices" fallacy, Opsec seeks to understand the rationale to make reproducible judgments in dynamic situations, to educate oneself through practice to the point of not needing any guides.<br><br></p>
+        <p>
+            <ol>
+                <li>Convenience is inversely proportional to safety and security. The more secure we make things, the less convenient they become and the more liability or vulnerabilities may be introduced.<br><br>
+                    <p><img src="https://i0.wp.com/37prime.com/news/wp-content/uploads/2013/08/Security-vs-Convenience-Curved.png" width="50%"></p>
+                </li>
+                <li>The more you attempt to secure something, the more attention it can bring, potentially increasing threats. Often, hiding in plain sight is more effective.</li>
+            </ol>
+            <br><br>
+        </p>
 
-    <br><br>
-    <a href="#opsec-101">top</a><br>
+        <p>To combat this, we put countermeasures in the back and focus on the rationale first. This is called the opsec process. The opsec process is a list of questions to help rationally assess a threat and judge the efficacy or even necessity of countermeasures against it.<br><br></p>
 
-    <hr>
+        <p id="best-practices-fallacy" class="lbl-tip"><b>Food for thought</b>: Some guides recommend taking a "best practices" approach to security, such as using recommending everyone use a VPN, password managers, etc. This "best practices" fallacy is a countermeasure-first approach based on the study of successes, rather than failures, and as such is an insufficient starting point when assessing any highly-individual and dynamic topic such as security or privacy.<br><br>In reality, while the countermeasures recommended might end up working for some of the people, some of the time, that merely indicates the threat model for those people happens to be similar at the moment, but it doesn't teach why, nor is it adaptable for when it's not similar. This is why rather than making assumptions based on the "best practices" fallacy, Opsec seeks to understand the rationale to make reproducible judgments in dynamic situations, to educate oneself through practice to the point of not needing any guides.<br><br></p>
 
-    <br><br><br>
+        <br><br>
+        <a href="#opsec-101">top</a><br>
 
-    <h2 id="the-opsec-process">The Opsec process</h2><br>
+        <hr>
 
-    <p>Opsec is a practice or methodology based on rational assessments before action. Before deciding what countermeasure to use, first you need to asses if the threat is serious, or even practical.<br><br></p>
+        <br><br><br>
 
-    <p>This is done by asking a series of questions in order.<br><br></p>
+        <h2 id="the-opsec-process">The Opsec process</h2><br>
 
-    <br><br><br>
+        <p>Opsec is a practice or methodology based on rational assessments before action. Before deciding what countermeasure to use, first you need to asses if the threat is serious, or even practical.<br><br></p>
 
-    <hr style="display: block; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; border-style: dashed; border-width: 1px;">
+        <p>This is done by asking a series of questions in order.<br><br></p>
 
-    <br><br><br>
-    
-    <h3 id="what-needs-protecting">1. What needs protecting?</h3><br>
+        <br><br><br>
 
-    <p>This could be information, a physical item, your personal health, or anything that has value or provides additional opportunity once accessed. For most of us, the answer to this question might be family, our home, any number of valuable belongings, our personally identifiable information, important financial information, or our passwords. All of these things need to be protected, but not all of them are always at risk in every situation.<br><br></p>
+        <hr style="display: block; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; border-style: dashed; border-width: 1px;">
 
-    <h4 id="thought-experiment-1">Thought experiment</h4>
+        <br><br><br>
 
-    <p><div class="wrap-collabsible"> <input id="collapsible4" class="toggle" type="checkbox"> <label for="collapsible4" class="lbl-toggle">Have you ever left your phone on a desk at work while turning your back on it to talk to a colleague? Couldn’t it have been stolen in that moment?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>Depending on what your relationship is with your colleagues, the level of safety common in said workplace, the type of workplace, and the value of the phone, information on it, or access it provides, that phone may either need to be handcuffed to you or can be lent to a colleague unlocked without incurring any risk at all.</p></div></div></div><br></p>
-    <p><div class="wrap-collabsible"> <input id="collapsible5" class="toggle" type="checkbox"> <label for="collapsible5" class="lbl-toggle">Have you ever left your front door open while carrying multiple loads of groceries or moving boxes from the car to the living room? Couldn’t someone have entered into the house in that moment?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>The physical safety of keeping our doors open is based on the likelihood of someone trying to enter. You can usually visually inspect your surroundings well enough to see if that is a likelihood or not, but how serious to take this will likely depend on the safety of the neighborhood. Some neighborhoods you could leave your door open all day long without incurring any risk. Others, adding a security door to your house may just get it stolen in the night.</p></div></div></div><br></p>
-    <p><div class="wrap-collabsible"> <input id="collapsible6" class="toggle" type="checkbox"> <label for="collapsible6" class="lbl-toggle">Have you ever given your credit card to a cashier and trusted them to charge it only for the amount of the goods being purchased? Couldn’t they have charged a much larger amount of even stolen your card number for later personal use?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>While theft and fraud do happen, usually the bank and law enforcement resolve these issues for you. The likelihood of these things happening to you largely depend on the type of establishment and the risk/reward ratio for the individual. The risk of getting fired or going to jail deters most undetermined criminals.</p></div></div></div><br></p>
+        <h3 id="what-needs-protecting">1. What needs protecting?</h3><br>
 
-    <!--p>
-        <ul>
-            <li>Have you ever left your phone on a desk at work while turning your back on it to talk to a colleague? Couldn’t it have been stolen in that moment?<br><br></li>
-            <li>Have you ever left your front door open while carrying multiple loads of groceries or moving boxes from the car to the living room? Couldn’t someone have entered into the house in that moment?<br><br></li>
-            <li>Have you ever given your credit card to a cashier and trusted them to charge it only for the amount of the goods being purchased? Couldn’t they have charged a much larger amount of even stolen your card number for later personal use?<br><br></li>
-        </ul>
-    </p-->
-    <p>The fact is, whether something needs protecting in that moment or not largely depends on what the threat might be, or more importantly the practicality of a threat at all. Just as it’s highly unlikely a worker in your office would steal your phone from your desk, it’s also unlikely your stolen phone would garner much value to them if properly locked and devoid of any real useful information on it <i>(an example of an applied countermeasure)</i>.<br></p>
+        <p>This could be information, a physical item, your personal health, or anything that has value or provides additional opportunity once accessed. For most of us, the answer to this question might be family, our home, any number of valuable belongings, our personally identifiable information, important financial information, or our passwords. All of these things need to be protected, but not all of them are always at risk in every situation.<br><br></p>
 
-    <br><br>
-    <a href="#opsec-101">top</a><br><br>
+        <h4 id="thought-experiment-1">Thought experiment</h4>
 
-    <hr style="display: block; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; border-style: dashed; border-width: 1px;">
+        <p><div class="wrap-collabsible"> <input id="collapsible4" class="toggle" type="checkbox"> <label for="collapsible4" class="lbl-toggle">Have you ever left your phone on a desk at work while turning your back on it to talk to a colleague? Couldn’t it have been stolen in that moment?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>Depending on what your relationship is with your colleagues, the level of safety common in said workplace, the type of workplace, and the value of the phone, information on it, or access it provides, that phone may either need to be handcuffed to you or can be lent to a colleague unlocked without incurring any risk at all.</p></div></div></div><br></p>
+        <p><div class="wrap-collabsible"> <input id="collapsible5" class="toggle" type="checkbox"> <label for="collapsible5" class="lbl-toggle">Have you ever left your front door open while carrying multiple loads of groceries or moving boxes from the car to the living room? Couldn’t someone have entered into the house in that moment?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>The physical safety of keeping our doors open is based on the likelihood of someone trying to enter. You can usually visually inspect your surroundings well enough to see if that is a likelihood or not, but how serious to take this will likely depend on the safety of the neighborhood. Some neighborhoods you could leave your door open all day long without incurring any risk. Others, adding a security door to your house may just get it stolen in the night.</p></div></div></div><br></p>
+        <p><div class="wrap-collabsible"> <input id="collapsible6" class="toggle" type="checkbox"> <label for="collapsible6" class="lbl-toggle">Have you ever given your credit card to a cashier and trusted them to charge it only for the amount of the goods being purchased? Couldn’t they have charged a much larger amount of even stolen your card number for later personal use?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>While theft and fraud do happen, usually the bank and law enforcement resolve these issues for you. The likelihood of these things happening to you largely depend on the type of establishment and the risk/reward ratio for the individual. The risk of getting fired or going to jail deters most undetermined criminals.</p></div></div></div><br></p>
 
-    <br><br><br>
+        <!--p>
+            <ul>
+                <li>Have you ever left your phone on a desk at work while turning your back on it to talk to a colleague? Couldn’t it have been stolen in that moment?<br><br></li>
+                <li>Have you ever left your front door open while carrying multiple loads of groceries or moving boxes from the car to the living room? Couldn’t someone have entered into the house in that moment?<br><br></li>
+                <li>Have you ever given your credit card to a cashier and trusted them to charge it only for the amount of the goods being purchased? Couldn’t they have charged a much larger amount of even stolen your card number for later personal use?<br><br></li>
+            </ul>
+        </p-->
+        <p>The fact is, whether something needs protecting in that moment or not largely depends on what the threat might be, or more importantly the practicality of a threat at all. Just as it’s highly unlikely a worker in your office would steal your phone from your desk, it’s also unlikely your stolen phone would garner much value to them if properly locked and devoid of any real useful information on it <i>(an example of an applied countermeasure)</i>.<br></p>
 
-    <h3 id="what-is-the-potential-threat">2. What is the potential threat?</h3><br>
+        <br><br>
+        <a href="#opsec-101">top</a><br><br>
 
-    <p>Most people don’t need help identifying common, obvious, physical threats. We encounter enough of those in the course of our daily lives that it becomes a second nature for most. While identifying them, we tend to internally ask ourselves questions to assess the potential threats.<br><br></p>
+        <hr style="display: block; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; border-style: dashed; border-width: 1px;">
 
-    <p>
-        <ul>
-            <li>What time is it? 2am? Why is someone at my front door? What would they want? What are they wearing? Do they look suspicious otherwise?<br><br></li>
-            <li>Who is that in the alley with me? Do I know them? Are they far enough away that I am safe? Are they following me or just walking the same direction?<br><br></li>
-            <li>Why is that person at the ATM so close to me? Is it accidental or on purpose? Are they elderly or blind perhaps?<br><br></li>
-        </ul>
-    <br><br>
-    </p>
+        <br><br><br>
 
-    <p>But not all potential threats are so obvious to everyone, especially abstract ones related to the effects of running certain software, performing certain actions on a computer, or trusting certain sources of information.<br><br></p>
+        <h3 id="what-is-the-potential-threat">2. What is the potential threat?</h3><br>
 
-    <p><div class="wrap-collabsible"> <input id="collapsible7" class="toggle" type="checkbox"> <label for="collapsible7" class="lbl-toggle">You sign up for a website to buy your friend a gift and there’s only one left! Out of convenience you use the same username and password you do for another site. What could go wrong?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>The website you provided information to has its database hacked and subsequently leaked on message boards of hackers who will now try those same credentials at various sites in hopes of gaining access to your life and finances.</p></div></div></div><br></p>
-    <p><div class="wrap-collabsible"> <input id="collapsible8" class="toggle" type="checkbox"> <label for="collapsible8" class="lbl-toggle">You’re on a flight and need to use the paid wifi with your credit card.  What could go wrong?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>While entering your credit card, the passenger in the seat behind you takes a photo of your card and uses it to order the wifi also.</p></div></div></div><br></p>
-    <p><div class="wrap-collabsible"> <input id="collapsible9" class="toggle" type="checkbox"> <label for="collapsible9" class="lbl-toggle">You see someone fall over in the street in front of your car and you get out to help them. What could go wrong?<br><br></label><div class="collapsible-content"><div class="content-inner"><p> They start screaming that you hit them with your car (when you clearly didn’t) and call the police and demand compensation. Alternatively, while you're helping them, someone hops into your car and steals it.</p></div></div></div><br></p>
+        <p>Most people don’t need help identifying common, obvious, physical threats. We encounter enough of those in the course of our daily lives that it becomes a second nature for most. While identifying them, we tend to internally ask ourselves questions to assess the potential threats.<br><br></p>
 
-    <!--p>
-        <ul>
-            <li>You sign up for a website to buy your friend a gift and there’s only one left! Out of convenience you use the same username and password you do for another site, which is now stored to their database. That database is later hacked and subsequently leaked on message boards of hackers who will now try those same credentials at various sites in hopes of gaining access to your life and finances.<br><br></li>
-            <li>You’re on a flight and need to use the paid wifi. While entering your credit card, the passenger in the back seat takes a photo of your card and uses it to order the wifi also.<br><br></li>
-            <li>You see someone fall over in the street in front of your car and you get out to help them. They start screaming that you hit them with your car (when you clearly didn’t) and call the police and demand compensation.<br><br></li>
-        </ul>
-    </p-->
+        <p>
+            <ul>
+                <li>What time is it? 2am? Why is someone at my front door? What would they want? What are they wearing? Do they look suspicious otherwise?<br><br></li>
+                <li>Who is that in the alley with me? Do I know them? Are they far enough away that I am safe? Are they following me or just walking the same direction?<br><br></li>
+                <li>Why is that person at the ATM so close to me? Is it accidental or on purpose? Are they elderly or blind perhaps?<br><br></li>
+            </ul>
+        <br><br>
+        </p>
 
-    <p>These threats are all possible, but perhaps unlikely. Still, it’s important to try to brainstorm and identify potential threats as early as possible: before you leave on that vacation, before you start your car, before you enter your information into that website’s form. Without practicing opsec in this manner, the above threats will need to be learned from experience instead, sometimes at a potentially heavy price.</p>
+        <p>But not all potential threats are so obvious to everyone, especially abstract ones related to the effects of running certain software, performing certain actions on a computer, or trusting certain sources of information.<br><br></p>
 
+        <p><div class="wrap-collabsible"> <input id="collapsible7" class="toggle" type="checkbox"> <label for="collapsible7" class="lbl-toggle">You sign up for a website to buy your friend a gift and there’s only one left! Out of convenience you use the same username and password you do for another site. What could go wrong?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>The website you provided information to has its database hacked and subsequently leaked on message boards of hackers who will now try those same credentials at various sites in hopes of gaining access to your life and finances.</p></div></div></div><br></p>
+        <p><div class="wrap-collabsible"> <input id="collapsible8" class="toggle" type="checkbox"> <label for="collapsible8" class="lbl-toggle">You’re on a flight and need to use the paid wifi with your credit card.  What could go wrong?<br><br></label><div class="collapsible-content"><div class="content-inner"><p>While entering your credit card, the passenger in the seat behind you takes a photo of your card and uses it to order the wifi also.</p></div></div></div><br></p>
+        <p><div class="wrap-collabsible"> <input id="collapsible9" class="toggle" type="checkbox"> <label for="collapsible9" class="lbl-toggle">You see someone fall over in the street in front of your car and you get out to help them. What could go wrong?<br><br></label><div class="collapsible-content"><div class="content-inner"><p> They start screaming that you hit them with your car (when you clearly didn’t) and call the police and demand compensation. Alternatively, while you're helping them, someone hops into your car and steals it.</p></div></div></div><br></p>
 
+        <!--p>
+            <ul>
+                <li>You sign up for a website to buy your friend a gift and there’s only one left! Out of convenience you use the same username and password you do for another site, which is now stored to their database. That database is later hacked and subsequently leaked on message boards of hackers who will now try those same credentials at various sites in hopes of gaining access to your life and finances.<br><br></li>
+                <li>You’re on a flight and need to use the paid wifi. While entering your credit card, the passenger in the back seat takes a photo of your card and uses it to order the wifi also.<br><br></li>
+                <li>You see someone fall over in the street in front of your car and you get out to help them. They start screaming that you hit them with your car (when you clearly didn’t) and call the police and demand compensation.<br><br></li>
+            </ul>
+        </p-->
 
-
-    <br><br>
-    <a href="#opsec-101">top</a><br><br>
-
-    <hr style="display: block; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; border-style: dashed; border-width: 1px;">
-
-    <br><br><br>
-
-    <h3 id="what-are-the-potential-vulnerabilities">3. What are the potential vulnerabilities?</h3><br>
-
-    <p>Now that you know what you want to protect (e.g. your credit card on a plane) and what the potential threat is (e.g. the person behind you able to see the card’s details or being stolen by other means during the flight), it can be quite straightforward to assess the vulnerabilities.<br><br></p>
-
-    <p>
-        <ul>
-            <li>Is this the best or most secure way to pay for this service?</li>
-            <li>Can someone see my card the way I’m holding it?</li>
-            <li>If I were in a different seat, what would I see?</li>
-            <li>Is this wifi payment portal really operated by the airline?</li>
-            <li>Is the website I’m entering this card information on using a secure (HTTPS) connection?</li>
-            <li>Does it share the information with any other services?</li>
-        </ul>
-    </p><br><br>
-
-    <p>Depending on the answers to these questions, you may find that you have none, few, or many potential vulnerabilities. Normally this kind of judgement is possible to do quite quickly, but the more technical the potential vulnerability is, the more experience and knowledge is required. How could someone who isn't aware of HTTPS know that not using it could leak their credit card number to a hacker?<br><br></p>
+        <p>These threats are all possible, but perhaps unlikely. Still, it’s important to try to brainstorm and identify potential threats as early as possible: before you leave on that vacation, before you start your car, before you enter your information into that website’s form. Without practicing opsec in this manner, the above threats will need to be learned from experience instead, sometimes at a potentially heavy price.</p>
 
 
-    <br><br>
-    <a href="#opsec-101">top</a><br><br>
-
-    <hr style="display: block; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; border-style: dashed; border-width: 1px;">
-
-    <br><br><br>
 
 
-<h3 id="what-is-the-potential-risk">4. What is the potential risk?</h3>
-<p><br/></p>
-<p>It’s important to know the difference between a vulnerability and a risk. The vulnerability is how it might be possible to attack you. The risk is what you stand to lose if it succeeds.</p>
-<p><br/></p>
-<p>Now that you know the potential threat and potential vulnerabilities, you can ask the more practical questions about the realistic potential risk to you. This is where common sense, rationality, and statistics will serve you well. There is no room for fear and paranoia in this step. </p>
-<p><br/></p>
-<ul>
-<li>How much money is on this card?</li>
-<li>How much could be lost?</li>
-<li>How much can I afford to lose if I make a mistake?</li>
-<li>How difficult, time consuming, and inconvenient will it be if I need to order a replacement card if it’s stolen?</li>
-<li>Is the risk worth the trouble for some wifi?</li>
-</ul>
-<p><br/></p>
-<p>Assuming your questions lead you to continue forward, but safely, the next thing to do is to apply the countermeasures to close up the vulnerabilities that will ultimately serve to disable the threat.</p>
-<p><br/></p>
-    <p><br/><br/><br><br><br></p>
-<a href="#opsec-101">top</a> 
-<p><br/><br><br><br></p>
+        <br><br>
+        <a href="#opsec-101">top</a><br><br>
 
-<hr style="display: block; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; border-style: dashed; border-width: 1px;">
+        <hr style="display: block; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; border-style: dashed; border-width: 1px;">
 
-<p><br/><br/><br><br><br></p>
+        <br><br><br>
 
-<h3 id="what-are-the-countermeasures">5. What are the countermeasures?</h3>
-<p><br/></p>
-<p>Based on the practical potential vulnerabilities already discussed, you’ll now want to remove any of the unrealistic or dismissed threats first.</p>
-<p><br/></p>
-<ul>
-<li>Can someone see my card the way I’m holding it?</li>
-<li>If I were in a different seat, what would I see?</li>
-<li><del>Is the website I’m entering this card information on using an encrypted (HTTPS) connection?</del></li>
-<li><del>Is this wifi payment portal really operated by the airline?</del></li>
-<li><del>Is this the best or most secure way to pay for this service?</del></li>
-</ul>
-<p><br/></p>
-<p>That leaves us with only two practical vulnerabilities we’re aware of:</p>
-<p><br/></p>
-<ul>
-<li><p>Someone sees you typing the credit card information on your phone.</p>
-</li>
-<li><p>Someone sees your card information directly.</p>
-</li>
-</ul>
-<p><br/></p>
-<p>The easiest countermeasure to these is the same for both:</p>
-<p><br/></p>
-<ul>
-<li>Cover your phone and card with a coat, or hold it down in your lap away from the line of sight of any other passengers until the process is complete.</li>
-</ul>
-<p><br/></p>
-    <p><br/><br/><br><br><br></p>
-<a href="#opsec-101">top</a> 
-<p><br/><br><br><br></p>
+        <h3 id="what-are-the-potential-vulnerabilities">3. What are the potential vulnerabilities?</h3><br>
 
-<hr>
+        <p>Now that you know what you want to protect (e.g. your credit card on a plane) and what the potential threat is (e.g. the person behind you able to see the card’s details or being stolen by other means during the flight), it can be quite straightforward to assess the vulnerabilities and whether they are credible or not.<br><br></p>
 
-<p><br/><br/><br><br><br></p>
+        <p>
+            <ul>
+                <li>Is this the best or most secure way to pay for this service?</li>
+                <li>Can someone see my card the way I’m holding it?</li>
+                <li>If I were in a different seat, what would I see?</li>
+                <li>Is this wifi payment portal really operated by the airline?</li>
+                <li>Is the website I’m entering this card information on using a secure (HTTPS) connection?</li>
+                <li>Does it share the information with any other services?</li>
+            </ul>
+        </p><br><br>
 
-<h2 id="good-opsec-practice-practice-practice">Good Opsec? Practice, practice, practice</h2>
-<p>The previous examples were largely obvious and wouldn’t necessarily need a document or checklist to discover them. What’s important is the thought process behind them: to be asking the right questions, and to get better at finding the right answers.</p>
-<p><br/></p>
-<p>In the following section, we’ll practice the opsec process and gradually increase the difficulty of these situations and scenarios in story form to gain experience and insight into where gaps in knowledge might lie.</p>
-<p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p>
-  </body>
+        <p>Depending on the answers to these questions, you may find that you have none, few, or many potential vulnerabilities. Normally this kind of judgement is possible to do quite quickly, but the more technical the potential vulnerability is, the more experience and knowledge is required. How could someone who isn't aware of HTTPS know that not using it could leak their credit card number to a hacker?<br><br></p>
+
+        <p>In this particular situation, we eliminate all unlikely or impractical vulnerabilities and focus on what remains.<br><br></p>
+
+        <p>
+            <ul>
+                <li>Someone can you typing the credit card information on your phone.</li>
+                <li>Someone can see your physical card.</li>
+            </ul>
+        </p>
+
+
+        <br><br>
+        <a href="#opsec-101">top</a><br><br>
+
+        <hr style="display: block; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; border-style: dashed; border-width: 1px;">
+
+        <br><br><br>
+
+
+        <h3 id="what-is-the-potential-risk">4. What is the potential risk?</h3><br>
+        <p>It’s important to know the difference between a vulnerability and a risk. Simply put, the vulnerability is <b>how</b> it might be possible to attack you. The risk is <b>what you could lose</b> if it succeeds.<br><br></p>
+
+        <p>Now that you know the potential threat and potential vulnerabilities, you can ask the more practical questions about the realistic potential risk to you. This is where common sense, rationality, and statistics will serve you well. <b>There is no room for fear and paranoia in this step.</b><br><br></p>
+
+        <p>
+            <ul>
+                <li>How much money is on this card?</li>
+                <li>How much could be lost?</li>
+                <li>How much can I afford to lose if I make a mistake?</li>
+                <li>How difficult, time consuming, and inconvenient will it be if I need to order a replacement card if it’s stolen?</li>
+                <li>Are there any passengers near me that could steal the information in the first place?</li>
+                <li>Is the risk worth the trouble for some wifi?</li>
+            </ul>
+        </p><br><br>
+
+        <p>Assuming a credible risk is perceived, the next step is to assess which countermeasures are most appropriate for the threat.<br><br></p>
+
+        <br><br>
+        <a href="#opsec-101">top</a><br><br>
+        <hr style="display: block; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; border-style: dashed; border-width: 1px;">
+        <br><br><br>
+
+
+        <h3 id="what-are-the-countermeasures">5. What are the countermeasures?</h3><br>
+
+        <p>Assuming a credible threat exists and there is perceived risk, the next thing to do is to apply the countermeasures to close up the vulnerabilities that will ultimately serve to neutralize the threat.<br><br></p>
+
+        <p>In this particular situation, we have eliminated all unlikely or impractical vulnerabilities and focus on what remains.<br><br></p>
+
+        <p>
+            <ul>
+                <li>Someone can you typing the credit card information on your phone.</li>
+                <li>Someone can see your physical card.</li>
+            </ul>
+        </p>
+
+
+        <p>The easiest countermeasure for these is likely the same for both:<br><br></p>
+
+        <p>
+            <ul>
+                <li>Cover your phone and card with a coat, or hold it down in your lap away from the line of sight of any other passengers until the process is complete.</li>
+            </ul>
+        </p><br><br>
+
+        <p>The simplicity of assessing a specific threat and risk may lead one to believe the thought process isn't being used, but much like math, just because an easier equation doesn't need a calculator doesn't mean there isn't calculation occuring. The simplicity of the process can be deceiving and lead to the belief that applying a countermeasure-first approach is sufficient. That is the <a href="#best-practices-fallacy">"best practices" fallacy</a> addressed earlier.<br><br></p> 
+
+        <br><br>
+        <a href="#opsec-101">top</a><br><br>
+        <hr>
+        <br><br><br>
+
+
+
+        <h2 id="good-opsec-practice-practice-practice">Good Opsec? Practice, practice, practice</h2><br>
+        <p>The previous examples were largely obvious and wouldn’t necessarily need a guide or checklist to assess them. What’s important is the thought process behind them: to be asking the right questions and learn how to find the right answers in a reproducible way.<br><br></p>
+        <p>In the following section, we’ll take the opsec process to less simplistic scenarios, gradually increasing the difficulty of these scenarios in story form to uncover gaps in knowledge and get better at applying the opsec process instinctively.<br><br></p>
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </body>
 </html>
