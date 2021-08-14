@@ -46,10 +46,11 @@ ol li::before {
 }
 
 .cropped {
-    width: 75%; /* width of container */
+    width: 100%; /* width of container */
     height: 300px; /* height of container */
     overflow: hidden;
 }
 .cropped img {
-    margin: -10px 0px 0px -180px;
+    margin: -43px 0px 0px -184px;
+    width: inherit;
 }
