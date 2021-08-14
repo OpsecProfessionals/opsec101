@@ -44,3 +44,12 @@ ol li::before {
                                             of the section counter, separated
                                             by a period */
 }
+
+.cropped {
+    width: 75%; /* width of container */
+    height: 300px; /* height of container */
+    overflow: hidden;
+}
+.cropped img {
+    margin: -10px 0px 0px -180px;
+}
