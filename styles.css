@@ -54,3 +54,13 @@ ol li::before {
     margin: -280px 0px 0px 0px;
     width: inherit;
 }
+
+.container {
+  display: flex;
+}
+
+.item {
+  flex-basis: 100px;
+  height: 50%;
+  margin: 5px;
+}
