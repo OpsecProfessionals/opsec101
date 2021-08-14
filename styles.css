@@ -45,12 +45,12 @@ ol li::before {
                                             by a period */
 }
 
-.cropped {
+.cropped-head {
     width: 100%; /* width of container */
-    height: 300px; /* height of container */
+    height: 500px; /* height of container */
     overflow: hidden;
 }
-.cropped img {
-    margin: -95px 0px 0px 0px;
+.cropped-head img {
+    margin: -280px 0px 0px 0px;
     width: inherit;
 }
