@@ -51,6 +51,6 @@ ol li::before {
     overflow: hidden;
 }
 .cropped img {
-    margin: -43px 0px 0px -184px;
+    margin: -95px 0px 0px 0px;
     width: inherit;
 }
