@@ -37,7 +37,7 @@ ol {
   list-style-type: none;
 }
 
-li::before {
+ol li::before {
   counter-increment: section;            /* Increments only this instance
                                             of the section counter */
   content: counters(section, ".") " ";   /* Combines the values of all instances
